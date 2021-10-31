@@ -3,8 +3,9 @@
 
 import random
 
-from ch2.individual import create_random_inidividual
+#from ch2.individual import create_random_inidividual
 
+from individual import create_random_inidividual
 
 def select_tournament(population, tournament_size):
     new_offspring = []

@@ -6,8 +6,12 @@ import random
 #from fitness import fitness
 #from settings import MIN_BORDER, MAX_BORDER
 
-from ch2.fitness import fitness
-from ch2.settings import MIN_BORDER, MAX_BORDER
+#from ch2.fitness import fitness
+#from ch2.settings import MIN_BORDER, MAX_BORDER
+
+from fitness import fitness
+from settings import MIN_BORDER, MAX_BORDER
+
 
 class Individual:
 

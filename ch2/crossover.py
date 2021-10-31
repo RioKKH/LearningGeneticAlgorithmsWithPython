@@ -5,9 +5,13 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ch2.individual import create_random_inidividual, create_individual
-from ch2.fitness import fitness
-from ch2.settings import MIN_BORDER, MAX_BORDER
+#from ch2.individual import create_random_inidividual, create_individual
+#from ch2.fitness import fitness
+#from ch2.settings import MIN_BORDER, MAX_BORDER
+
+from individual import create_random_inidividual, create_individual
+from fitness import fitness
+from settings import MIN_BORDER, MAX_BORDER
 
 
 def gene_constraints(g, min_ = MIN_BORDER, max_ = MAX_BORDER):
@@ -43,8 +47,8 @@ if __name__ == "__main__":
     random.seed(30)
 
     # Pair of random individuals
-    p_1 = create_individual()
-    p_2 = create_individual()
+    p_1 = create_random_inidividual()
+    p_2 = create_random_inidividual()
 
     # Offspring of individuals
     offspring = crossover(p_1, p_2)

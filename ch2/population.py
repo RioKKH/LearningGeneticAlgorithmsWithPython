@@ -5,9 +5,13 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ch2.individual import create_random_inidividual
-from ch2.fitness import fitness
-from ch2.settings import MIN_BORDER, MAX_BORDER
+#from ch2.individual import create_random_inidividual
+#from ch2.fitness import fitness
+#from ch2.settings import MIN_BORDER, MAX_BORDER
+
+from individual import create_random_inidividual
+from fitness import fitness
+from settings import MIN_BORDER, MAX_BORDER
 
 def get_best_individual(population):
     return max(population, key = lambda ind: ind.fitness)
